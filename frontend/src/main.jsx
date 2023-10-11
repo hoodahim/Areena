@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
-import { BookingContextProvider } from './context/bookingContext.jsx';
+import { BookingContextProvider } from './context/BookingContext.jsx';
 import { AuthContextProvider } from './context/AuthContext.jsx';
 import { GlobalBookingContextProvider } from './context/GlobalBookingContext.jsx';
 
