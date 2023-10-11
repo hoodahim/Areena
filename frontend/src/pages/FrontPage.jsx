@@ -1,4 +1,4 @@
-import '../styles/FrontPage.css';
+import '../styles/frontPage.css';
 import venues from '../data/venues';
 
 const limitedVenues = venues.slice(0, 5);
