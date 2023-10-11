@@ -3,6 +3,7 @@ import { useBookingContext } from '../hooks/useBookingContext';
 import { useState } from 'react';
 import { useAuthContext } from '../hooks/useAuthContext';
 import { useGlobalBookingContext } from '../hooks/useGlobalBookingContext';
+import { REACT_APP_API_URL } from '../utils/apiConfig';
 
 const BookingDetails = ({ booking }) => {
   const { dispatch } = useBookingContext();
@@ -17,7 +18,7 @@ const BookingDetails = ({ booking }) => {
       return;
     }
     const response = await fetch(
-      `http://localhost:5000/api/bookings/${booking._id}`,
+      `${REACT_APP_API_URL}/api/bookings/${booking._id}`,
       {
         method: 'DELETE',
         headers: {
@@ -39,7 +40,7 @@ const BookingDetails = ({ booking }) => {
     };
 
     const globalresponse = await fetch(
-      `http://localhost:5000/api/globaldata/delete`,
+      `${REACT_APP_API_URL}/api/globaldata/delete`,
       {
         method: 'DELETE',
         headers: {

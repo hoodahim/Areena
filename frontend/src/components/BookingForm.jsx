@@ -8,6 +8,7 @@ import '../styles/timeSelector.css';
 import { useBookingContext } from '../hooks/useBookingContext';
 import { useAuthContext } from '../hooks/useAuthContext';
 import { useGlobalBookingContext } from '../hooks/useGlobalBookingContext';
+import { REACT_APP_API_URL } from '../utils/apiConfig';
 
 let availableTimeSlots = timeSlots;
 
@@ -52,7 +53,7 @@ const BookingForm = () => {
     }
     const newBooking = { location, date, time, booked: true, qrCode };
 
-    const response = await fetch('http://localhost:5000/api/bookings', {
+    const response = await fetch(`${REACT_APP_API_URL}/api/bookings`, {
       method: 'POST',
       body: JSON.stringify(newBooking),
       headers: {
@@ -78,7 +79,7 @@ const BookingForm = () => {
 
     const globalbooking = { location, date, time };
 
-    const globalresponse = await fetch('http://localhost:5000/api/globaldata', {
+    const globalresponse = await fetch(`${REACT_APP_API_URL}/api/globaldata`, {
       method: 'POST',
       body: JSON.stringify(globalbooking),
       headers: {

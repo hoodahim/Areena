@@ -4,6 +4,7 @@ import BookingForm from '../components/BookingForm';
 import { useBookingContext } from '../hooks/useBookingContext';
 import { useAuthContext } from '../hooks/useAuthContext';
 import { useGlobalBookingContext } from '../hooks/useGlobalBookingContext';
+import { REACT_APP_API_URL } from '../utils/apiConfig';
 
 const Home = () => {
   const { bookings, dispatch } = useBookingContext();
@@ -13,7 +14,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchbookings = async () => {
-      const response = await fetch('http://localhost:5000/api/bookings', {
+      const response = await fetch(`${REACT_APP_API_URL}/api/bookings`, {
         headers: {
           Authorization: `Bearer ${state.user.token}`,
         },
@@ -26,9 +27,7 @@ const Home = () => {
     };
 
     const fetchglobalbookings = async () => {
-      const globalresponse = await fetch(
-        'http://localhost:5000/api/globaldata'
-      );
+      const globalresponse = await fetch(`${REACT_APP_API_URL}/api/globaldata`);
 
       const globaljson = await globalresponse.json();
 
