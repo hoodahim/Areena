@@ -1,0 +1,261 @@
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+  --areena: #370247;
+}
+body {
+  background: white;
+  margin: 0;
+  font-family: 'Dancing';
+}
+header {
+  background: white;
+  width: 100%;
+}
+header .container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #370247, #cfae82);
+  border-radius: 20px;
+}
+header a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-left: 20px;
+  font-family: 'Cinzel', sans-serif;
+}
+.pages {
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 5%;
+}
+.booking-details {
+  background: #370247;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+}
+.booking-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: #cfae82;
+  font-family: 'Cinzel';
+}
+.booking-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #fff;
+}
+.booking-details-qrcode {
+  background: #cfae82;
+  border: 0;
+  color: #370247;
+  padding: 5px;
+  padding-left: 50%;
+  padding-right: 50%;
+  font-family: 'Cinzel';
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.4em;
+  margin-top: 20px;
+}
+.bookingdetailsdelete {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #370247;
+}
+.booking-details button {
+  background: #cfae82;
+  border: 0;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.3em;
+  margin-top: 20px;
+}
+.qrCode-visible {
+  margin-left: 40%;
+  margin-top: 20px;
+}
+
+/* new workout form */
+.create {
+  padding: 10px;
+  background: #dbc9ba;
+  border-radius: 20px;
+  height: 500px;
+}
+form h3 {
+  margin: 10px 0 20px 0;
+  font-size: 1.5em;
+  color: #370247;
+  font-family: 'Acme';
+}
+
+.date {
+  width: 80%;
+}
+.date label {
+  font-size: 1.2em;
+  color: #370247;
+  font-family: 'Acme';
+}
+.date input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d19393;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  font-family: 'Acme';
+  background-color: #cfae82;
+  color: #370247;
+  margin-bottom: 20px;
+}
+form button {
+  background: #370247;
+  border: 0;
+  color: #cfae82;
+  padding: 20px;
+  padding-left: 50%;
+  padding-right: 50%;
+  font-family: 'Cinzel';
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.4em;
+  width: 80%;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
+
+/* navbar */
+nav {
+  display: flex;
+  align-items: center;
+}
+nav a,
+nav button {
+  margin-left: 20px;
+  margin-right: 20px;
+  background: none;
+  border: 0;
+  font-size: 25px;
+  color: #370247;
+  cursor: pointer;
+  font-family: 'Cinzel', sans-serif;
+}
+.nav-icon {
+  font-size: 35px;
+}
+.nav-logedIn {
+  display: flex;
+  align-items: center;
+  font-family: 'Cinzel', sans-serif;
+}
+
+/* login form */
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border-radius: 4px;
+  font-size: 20px;
+  outline: none;
+  font-family: 'Acme';
+  color: #370247;
+  margin-bottom: 20px;
+}
+
+form label {
+  font-size: 1.2em;
+  color: #370247;
+  font-family: 'Acme';
+  margin-right: 20px;
+}
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d19393;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  font-family: 'Acme';
+  background-color: #ffffff;
+  color: #370247;
+}
+.form-control button {
+  background: #370247;
+  border: 0;
+  color: #cfae82;
+  padding: 20px;
+  padding-left: 50%;
+  padding-right: 50%;
+  font-family: 'Cinzel';
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.4em;
+}
+/* auth forms */
+form.signup,
+form.login {
+  font-family: 'Acme';
+  color: #370247;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 25px;
+  background-color: #dbc9ba;
+}
+
+.loginSignup {
+  width: 80%;
+}
+
+.react-datepicker__close-icon {
+  position: absolute;
+  top: -15%; /* Adjust the top position as needed */
+  right: -80%; /* Adjust the right position as needed */
+  cursor: pointer;
+  font-size: 5px;
+  color: #cfae82; /* Button color */
+  padding: 0;
+  margin: 0;
+}
+
+.react-datepicker__close-icon:after {
+  color: #cfae82; /* Hover color (adjust as needed) */
+  background-color: #370247;
+}

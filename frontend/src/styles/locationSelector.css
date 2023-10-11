@@ -1,0 +1,30 @@
+/* CSS for Select Element */
+.select-container {
+  margin-bottom: 20px;
+}
+
+.select-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+  color: #370247;
+  font-family: 'Acme';
+  font-size: 1.2em;
+}
+
+.select-element {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d19393;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+  font-family: 'Acme';
+  background-color: #cfae82;
+  color: #370247;
+}
+
+/* Style for Options (Dropdown items) */
+.select-element option {
+  font-size: 16px;
+}

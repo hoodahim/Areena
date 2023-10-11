@@ -1,0 +1,35 @@
+/* CSS for Available Time Selector */
+.time-selector-container {
+  margin-bottom: 20px;
+}
+
+.time-selector-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+  color: #370247;
+  font-family: 'Acme';
+  font-size: 1.2em;
+}
+
+.time-list {
+  list-style: none;
+  padding: 2px;
+  color: #370247;
+  font-family: 'Acme';
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.time-list-item {
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: #333;
+  transition: text-decoration 0.2s ease-in-out;
+}
+
+.time-list-item:hover {
+  text-decoration: underline;
+}

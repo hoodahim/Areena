@@ -1,0 +1,72 @@
+.heading {
+  font-size: 30px;
+  padding: 20px;
+  margin: 20px;
+  color: #370247;
+  text-align: center;
+  background-color: #dbc9ba;
+  border-radius: 20px;
+  font-family: 'Cedarville Cursive';
+}
+
+.heading h1 {
+  font-family: 'Acme';
+}
+
+.register {
+  font-size: 30px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  color: #370247;
+  border-radius: 20px;
+  font-family: 'Gloria Hallelujah';
+  text-shadow: #370247;
+  text-emphasis: bold;
+  text-decoration: underline;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+}
+
+.content-left {
+  font-size: 30px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #cfae82;
+  text-align: center;
+  color: #370247;
+  border-radius: 20px;
+  font-family: 'Great Vibes';
+  width: 60%;
+}
+.content-left h1 {
+  font-family: 'Acme';
+}
+
+.content-right {
+  font-size: 30px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #cfae82;
+  text-align: center;
+  color: #370247;
+  border-radius: 20px;
+  font-family: 'Gloria Hallelujah';
+  width: 100%;
+}
+.content-right h1 {
+  font-family: 'Acme';
+}
+.contact {
+  font-size: 30px;
+  padding: 20px;
+  margin: 20px;
+  background-color: white;
+  text-align: center;
+  color: #370247;
+  border-radius: 20px;
+  font-family: 'Gloria Hallelujah';
+}
