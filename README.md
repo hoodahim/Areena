@@ -1,4 +1,4 @@
-# Breif Introduction
+# Brief Introduction
 Areena is an event location booking website designed to book and access the booked event location using a QR code.
 It is based on MERN(MongoDb, Express, React and nodejs) stack and provided globally using onrender.com
 
